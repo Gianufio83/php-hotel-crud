@@ -32,7 +32,12 @@
                 <td> <?php echo $room['floor']; ?></td>
                 <td><a class="btn btn-primary"href="show/show.php?id= <?php echo $room['id']; ?> "target="_blanck">VIEW</a></td>
                 <td><a class="btn btn-success"href="#">UPDATE</a></td>
-                <td><a class=" btn btn-danger"href="#">DELETE</a></td>
+                <td>
+                <form class="" action="delete/delete.php" method="post">
+                  <input type="hidden" name="id" value="<?php echo $room['id']; ?>">
+                  <input class="btn btn-danger" type="submit" value="DELETE">
+                </form>
+                </td>
               </tr>
             <?php }
           }
