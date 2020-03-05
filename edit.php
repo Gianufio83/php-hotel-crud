@@ -1,7 +1,7 @@
 <?php
 include 'database.php';
  include 'partials/header.php';
- include 'server-update.php';
+ // include 'server-update.php';
 
  if (!empty($_GET['id'])) {
    $idRoom = $_GET['id'];

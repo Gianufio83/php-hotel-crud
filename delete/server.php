@@ -4,6 +4,7 @@
     die('NO ID');
   }
   $idRoom = $_POST['id'];
+  
   $sql = "SELECT * FROM `stanze` WHERE `id` = $idRoom";
   $result = $conn->query($sql);
   if ($result && $result->num_rows == 0) {
