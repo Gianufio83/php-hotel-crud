@@ -18,4 +18,5 @@
       </div>
      </div>
     </div>
-  <?php __DIR__ . '/../partials/footer.php' ?>
+  </div>
+    <?php include __DIR__ . '/../partials/footer.php' ?>
