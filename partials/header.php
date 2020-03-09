@@ -1,4 +1,5 @@
 <?php
+  include_once __DIR__ .'/../env.php';
   include_once 'database.php';
  ?>
 <!DOCTYPE html>
@@ -17,7 +18,7 @@
       <div class="collapase navbar-collapse" id="navbarSupportedCntent">
         <ul class="navbar-nav">
           <li><a href="<?php echo $basePath ?>">Tutte le stanze - </a></li>
-          <li><a href="<?php echo $basePath ?>create/create.php"> - Inserisci una stanza</a></li>
+          <li><a href="<?php echo $basePath ?>/create/create.php"> - Inserisci una stanza</a></li>
         </ul>
       </div>
     </nav>

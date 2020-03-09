@@ -1,13 +1,11 @@
 <?php
-  include_once __DIR__ .'/../env.php'
-  // include 'server.php';
   include __DIR__ .'/../partials/header.php';
  ?>
 
  <div class="container">
   <div class="row">
    <div class="col-12 mt-5">
-     <form action="server-update.php" method="POST">
+     <form action="server.php" method="POST">
        <div class="form-group">
          <label for="room_number">Numero di stanza</label>
          <input class="form-control" type="text" name="room_number" placeholder="Inserisci il numero della stanza" value="">
@@ -21,7 +19,7 @@
          <input class="form-control" type="text" name="beds" placeholder="Inserisci il numero dei letti"value="">
        </div>
        <div class="form-group">
-         <input type="hidden" name="id" value="<?php echo $rooms['id']; ?>">
+         <input type="hidden" name="id" value="">
          <input  class="btn btn-info form-control" type="submit" value="Salva">
        </div>
      </form>
