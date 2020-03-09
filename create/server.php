@@ -1,6 +1,7 @@
 <?php
-  include __DIR__ .'/../env.php';
-  include __DIR__ . '/../database.php';
+// include_once __DIR__ .'/../env.php';
+
+include __DIR__ . '/../database.php';
 
 if (empty($_POST['beds'])) {
   die('Non hai inseito il numero di letti');
@@ -24,3 +25,10 @@ VALUES (?,?,?, NOW(), NOW());
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("iii", $beds, $floor, $roomNumber);
 $stmt->execute();
+
+if(isset($stmt->insert_id)) {
+    header("Location: $basePath/show/show.php?id=$stmt->insert_id");
+}
+else{
+  echo 'KO';
+}

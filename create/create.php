@@ -1,5 +1,6 @@
 <?php
-  include_once __DIR__ .'/../env.php';
+  include_once __DIR__ .'/../env.php'
+  // include 'server.php';
   include __DIR__ .'/../partials/header.php';
  ?>
 

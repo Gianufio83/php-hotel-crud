@@ -12,11 +12,14 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg">
       <div class="navbar-brand"> Hotel Booleana</div>
+      <div class="collapase navbar-collapse" id="navbarSupportedCntent">
         <ul class="navbar-nav">
-          <li><a href="<?php echo $basePath ?>">Tutte le stanze</a></li>
+          <li><a href="<?php echo $basePath ?>">Tutte le stanze - </a></li>
+          <li><a href="<?php echo $basePath ?>create/create.php"> - Inserisci una stanza</a></li>
         </ul>
+      </div>
     </nav>
   </header>
   <div class="container mt-5">
